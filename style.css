@@ -235,9 +235,12 @@ body {
 
 .card-razoes {
     background-color: var(--dark-grey);
-    padding: 20px 0;
+    padding: 24px;
     margin: 5px;
+    text-align: center;
+    border-radius: 11px;
 }
+
 
 .card-razoes .header-card-razoes {
     display: flex;
@@ -380,6 +383,14 @@ body {
     transition: all 0.5s;
 }
 
+
+
+.btn-projeto:hover{
+    color: var(--purple);
+    border: 2px solid coral;
+    
+}
+
 .macbook_img {
     position: relative;
     box-sizing: border-box;
@@ -426,7 +437,15 @@ body {
 }
 
 .lines{
-    background: url(img/4909526-ai.png) cover no-repeat ; 
+    background: url(img/lines.png)  top right no-repeat ; 
+}
+
+.market-bg{
+    background: url(img/trafego.png)  bottom left no-repeat ; 
+}
+.bg-cards{
+    background: url(img/bg-cards.png)   no-repeat ; 
+    background-size: cover;
 }
 
 .services-header h2 {
@@ -483,8 +502,42 @@ padding-bottom: 10%;
 
 }
 
+.flutuante{
+    padding: -40px 0px
+}
+
+.base-img {
+    position: relative;
+    right: o;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.base-img img{
+    width: 70%;
+    animation: levitate 2s infinite ease-in-out;
+}
+
+.base{
+    background-color: var(--purple);
+    border-radius: 35px;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.base h2{
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+}
+
 .slider-seg{
-background-color:  var(--purple);
+background-color: #e6977e;
 }
 
 .slider{
@@ -963,6 +1016,8 @@ form.formContact {
     background: radial-gradient(circle at 24.1% 68.8%, rgb(137 93 93) 0%, rgb(241, 172, 255) 99.4%);
 }
 
+
+
 @keyframes levitate {
 
     0%,
@@ -1053,6 +1108,11 @@ form.formContact {
     align-items: center;
 }
 
+.btn-portfolio{
+    text-align: center;
+    margin: 25px 0;
+}
+
 @media (max-width:785px) {
 
 
@@ -1078,6 +1138,26 @@ form.formContact {
 
     .navigation ul {
         gap: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .btn-projeto{
+        margin: 20px 0;
+    }
+
+    .faq-title{
+        text-align: center;
+    }
+
+    div.seperator{
+        margin-left: 10.2em;
+    }
+    
+
+    .p10{
+        padding: 10px;
     }
 
     .menu {
@@ -1146,5 +1226,5 @@ form.formContact {
     .card-portfolio{
         margin: 10px 0;
     }
-
-}
+   
+   }
